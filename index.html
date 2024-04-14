@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dfa96836c3.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.table1 tr td:nth-child(1){
+    border: none;
+}
+ .table1 tr td{
+   padding-left: 10px;
+    border-right: 1px solid black;
+    color: white;
+}
+.table1 tr td:hover{
+    cursor: pointer;
+}
+.table1{
+   padding:10px 0px 10px 0px ;
+    width: 100%;
+    background-color: rgb(8, 121, 201);
+}
+.container1{
+    display: flex;
+    align-items: center;
+    
+}
+.container1 input{
+    width: 400px;
+    height: 45px;
+    flex: 3;
+    padding-left: 10px;
+    
+}
+.container1 button{
+    background-color: brown;
+    color: white;
+    width: 150px;
+    height: 45px;
+    margin-left: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.container1 i{
+    font-size: 35px;
+    color: white;
+    background: black;
+    border: 1px solid black;
+    padding:5px;
+    
+}
+
+.container1 .fcontainer1{
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+   
+    padding-left: 20px;
+}
+.container1 .fcontainer2{
+    flex: 2.4;
+    display: flex;
+   
+}
+.container1 .fcontainer3{
+    flex: 0.7;
+    padding-left: 40px;
+}
+.fcontainer1 h1{
+    font-size: 40px;
+    color:brown;
+    font-style:oblique;
+}
+.navb .navb-list table td{
+    padding-left: 20px;
+}
+.navb-list table{
+    width: 200px;
+    position: absolute;
+    border: 0.5px solid black;
+    display: none;
+    background-color: whitesmoke;
+    
+}
+.navb-list table:hover{
+    display: block;
+}
+
+.navo{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(231, 241, 248);
+}
+.nava{
+    
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.nava select{
+    width: 180px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: rgb(231, 241, 248);
+}
+.navbb{
+    display: flex;
+    flex: 3;
+    align-items: center;
+}
+.navb{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.navb a{
+    text-decoration: none;
+}
+.hhome:hover + .navb-list table {
+    display: block;
+}
+.container2 img{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;  
+}
+.container2inner .div{
+    display: flex;
+    width: 300px;
+    justify-content: flex-end;
+} 
+.container2inner{
+    padding: 10px 0px 10px 0px;
+    
+}
+.container2inner .div h2:nth-child(1){
+    border-right: 1px solid black;  
+    padding-right: 10px;
+}
+.container2inner .div h2:nth-child(2){
+    margin-left: 10px;
+}
+
+
+.card1{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    padding-bottom: 20px;
+}
+.card1 .cardprice{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.card1 button{
+    width: 100px;
+    height: 35px;
+    color: white;
+    border: none;
+    background-color: rgb(8, 121, 201);
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.card1 h3{
+    margin-bottom: 10px;
+}
+.cardlayer1{
+    display: flex;
+    width: 800px;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    padding: 15px;
+}
+.cardlayero{
+    width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.checkinput{
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+   
+    height:200px;
+    justify-content: space-evenly;
+}
+.checkvalue{
+    width: 180px;
+   
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.checkbox{
+    display: flex;
+}
+.checkboxcol .searchinp{
+    width: 150px;
+    height: 30px;
+    padding-left: 10px;
+}
+.checkboxcol{
+    display: flex;
+
+}
+.checkboxcol i{
+    font-size: 20px;
+    background-color: blue;
+    width: 25px;
+    color: white;
+    padding: 3px;
+   
+    
+}
+.checkboxgroup{
+    display: flex;
+    flex-direction: column;
+    
+    width: 200px;
+    background-color: rgb(250, 250, 250);
+}
+.checkinput i{
+    font-size: 15px;
+    color: yellow;
+}
+.procontainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+   
+    margin-bottom: 20px;
+}
+.procontainer-head{
+    
+    display: flex;
+    justify-content: center;
+    padding: 20px  0px 15px 0px;
+}
+.procontainer-head h1{
+    font-size: 40px;
+}
+
+.third-cont img{
+    width: 200px;
+    height: 230px;
+}
+.third-cont{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 320px;
+    padding: 0px 10px 0px 20px;
+    background-color: rgb(240, 237, 239);
+    margin: 10px;
+    border-radius: 10px;
+}
+.third-cont div h1{
+    margin: 10px 0px 10px 0px;
+}
+.third-cont div h2{
+    color: brown;
+}
+.third-over{
+    display: flex;
+    justify-content: center;
+    background: url('https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0px 40px 0px;
+    background-attachment: fixed;
+}
+
+.footerin2 i{
+    font-size: 40px;
+    margin-right: 30px;
+    color: rgb(8, 121, 201);
+}
+.footerin2{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+}
+.footer1in{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer1{
+   margin: 30px 70px 30px 70px;
+}
+.footer1 p{
+    font-size: 20px;
+    color: rgb(56, 55, 55);
+    margin-bottom: 20px;
+}
+.footer{
+    width: 1200px;
+    height:300px;
+    font-size: 20px;
+}
+.footer th{
+    text-align: start;
+    color: white;
+    font-size: 30px;
+
+}
+.footer td{
+    text-align: left;
+    width: 150px;
+    color: rgb(189, 189, 189);
+    font-size: 15px;
+}
+.footerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(51, 51, 51);
+    padding: 30px 0px 30px 0px;
+}
+.footerdiv td i{
+   font-size: 30px;
+   margin-right: 10px;
+}
+
+.footerdetail ul{
+    display: flex;
+    text-wrap: wrap;
+}
+.footerdetail ul li{
+    list-style-type: none;
+    border-right: 1px solid rgb(153, 153, 153);
+    padding: 0px 10px 0px 10px;
+    text-wrap: wrap;   
+    color: rgb(153, 153, 153);
+}
+.footerdetail h2{
+    margin: 10px 0px 10px 0px;
+    color: rgb(105, 105, 105);
+}
+.footerdetail{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.footerdetail div{
+   
+   width: 90%;
+}
+
+.footerdetail .noborder li{
+    border: none;
+}
+
+.finalfoot{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(8, 121, 201);
+    color: white;
+    margin-top: 20px;
+}
+    </style>
+
+
+</head>
+<body>
+    
+    <div>
+        
+        <table class="table1">
+            <tr>
+              <td>Offer Zone Top Deals & Discounts <i class="fas fa-shopping-cart"></i></td>
+              <td><i class="fas fa-map-marker-alt"></i> Select Location</td>
+              <td><i class="fas fa-truck"></i> Track Order</td>
+              <td><i class="fas fa-phone"></i> 001 234 5678</td>
+              <td><i class="far fa-arrow-alt-circle-right"></i> Log In</td>
+              <td><i class="far fa-arrow-alt-circle-right"></i> Register</td>
+            </tr>
+          </table>
+          
+          <div class="container1">
+            <div class="fcontainer1">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/logo2.png" alt="">
+            <h1>Electro Store</h1>
+            </div>
+            <div class="fcontainer2">
+            <input type="search" placeholder="search">
+            <button type="submit">search</button>
+        </div>
+            <div class="fcontainer3">
+            <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+
+          <div class="navo">
+            <div class="nava">
+                    <select name="vasanth" id="">
+                        <option value="All products">All products</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Stationary">Stationary</option>
+                        <option value="Dress">Dress</option>
+                        <option value="Furnitures">Furnitures</option>
+                        <option value="Gifts">Gifts</option>
+                    </select>
+            </div>
+
+            <div class="navbb" >
+                <div class="navb">
+                    <a class="home" href="">Home</a>
+                </div>
+
+                <div class="navb">
+                    <a href="" class="hhome" id="alink">ELectronics&#11206;</a>
+                    <div class="navb-list">
+                        <table>
+                            <tr>
+                                <td colspan="2">Mobiles & Computers</td>
+                            </tr>
+                            <tr>
+                                <td >Mobiles</td>
+                                <td>Mobile case</td>
+                            </tr>
+                            <tr>
+                                <td >Laptops</td>
+                                <td>Monitors</td>
+                            </tr>
+                            <tr>
+                                <td >Accesories</td>
+                                <td>PowerBank</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="navb">
+                    <a href="" class="hhome" id="alink">Appliances&#11206;</a>
+                    <div class="navb-list">
+                        <table>
+                            <tr>
+                                <td colspan="2">Tv & Appliances</td>
+                            </tr>
+                            <tr>
+                                <td>Tv</td>
+                                <td>Fridge</td>
+                            </tr>
+                            <tr>
+                                <td>Washing machine</td>
+                                <td>Wooden Products</td>
+                            </tr>
+                            <tr>
+                                <td>Fan</td>
+                                <td>Cubbords</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+    
+                <div class="navb">
+                    <a href="" class="home">About us</a>
+                </div>
+                <div class="navb">
+                    <a href="" class="home">New Arrival</a>
+                </div>
+                <div class="navb">
+                    <a href="" class="home">Pages</a>
+                </div>
+                <div class="navb">
+                    <a href="" class="home">Pages</a>
+                </div>
+            </div>
+          </div>
+          
+    </div>
+
+    <div class="container2">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/b3.jpg" alt="">
+        <div class="container2inner">
+            <div class="div">
+            <h2>Home</h2>
+            <h2>Appliances</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="procontainer-head">
+        <h1>Tv & Appliances</h1>
+    </div>
+    <div class="procontainer">
+        <div class="cardlayero">
+            <div class="cardlayer1">
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m4.jpg" alt="">
+                    <h3>Sony 80 cm</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m5.jpg" alt="">
+                    <h3>Artis Speaker</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m6.jpg" alt="">
+                    <h3>Philips Speakers</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="cardlayer1">
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m7.jpg" alt="">
+                    <h3>Whirlpool 245</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m8.jpg" alt="">
+                    <h3>BPL Washing Machine</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m9.jpg" alt="">
+                    <h3>Microwave Oven</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="cardlayer1">
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/mk3.jpg" alt="">
+                    <h3>iVooMi i Series</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/mk8.jpg" alt="">
+                    <h3>HP Wireless Printer</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/mk7.jpg" alt="">
+                    <h3>Intex Power Bank</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="cardlayer1">
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m3.jpg" alt="">
+                    <h3>Apple iPhone X</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card1">
+                    <img  src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m2.jpg" alt="">
+                    <h3>OPPO A37f</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card1">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m1.jpg" alt="">
+                    <h3>Samsung Galaxy J7</h3>
+                    <div class="cardprice">
+                    <p>$ 320 </p>
+                    <p style="text-decoration: line-through;">$ 360</p>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div> 
+        <!-- card -->
+        <div>
+            <div class="checkboxgroup">
+                <h2 style="color: rgb(255, 41, 119);">Brand</h2>
+                <div class="checkboxcol">
+                <input class="searchinp" placeholder="search" type="search" name="search" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="checkbox">
+                    <div class="checkinput">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                    <div class="checkvalue">
+                        <p>Electronics</p>
+                        <p>ELECTRON</p>
+                        <p>Electronic</p>
+                        <p>Generic</p>
+                        <p>mono</p>
+                        <p>ACR Electronics</p>
+                        <p>NAXA Electronics</p>
+                        <p>Techno electronics</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+                <div class="checkboxgroup">
+                    <h2 style="color: rgb(255, 41, 119);">Ram</h2>
+                    <div class="checkbox">
+                        <div class="checkinput">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="checkvalue">
+                            <p>Less than 512 MB</p>
+                            <p>512 MB - 1 GB</p>
+                            <p>1 GB</p>
+                            <p>2 GB</p>
+                            <p>3 GB</p>
+                            <p>5 GB</p>
+                            <p>6 GB</p>
+                            <p>6 GB & Above</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                    <div class="checkboxgroup">
+                        <h2 style="color: rgb(255, 41, 119);">Rating</h2>
+                        <div class="checkbox">
+                        <div class="checkinput">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="checkinput">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="checkinput">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="checkinput">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="checkinput">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                       
+                            <div class="checkvalue">
+                                <p>5.0</p>
+                                <p>5.0</p>
+                                <p>4.0</p>
+                                <p>2.0</p>
+                                <p>1.0</p>
+                                
+                            </div>
+                        </div>
+
+                        <hr>
+                    </div>
+                        <div class="checkboxgroup">
+                            <h2 style="color: rgb(255, 41, 119);">Discount</h2>
+                            <div class="checkbox">
+                                <div class="checkinput">
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                    
+                                </div>
+                                <div class="checkvalue">
+                                    <p>5% or More</p>
+                                    <p>10% or More</p>
+                                    <p>30% or More</p>
+                                    <p>35% or More</p>
+                                    <p>50% or More</p>
+                                    <p>70% or More</p>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                            <div class="checkboxgroup">
+                                <h2 style="color: rgb(255, 41, 119);">Offers</h2>
+                                <div class="checkbox">
+                                    <div class="checkinput" style="height: 100px;">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="checkvalue" style="height: 100px;">
+                                        <p>5% or More</p>
+                                        <p>10% or More</p>
+                                        <p>30% or More</p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                                <div class="checkboxgroup">
+                                    <h2 style="color: rgb(255, 41, 119);">Availability</h2>
+                                    <div class="checkbox">
+                                        <div class="checkinput" style="height: 100px;">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="checkvalue" style="height: 100px;">
+                                            <p>Exclude Out of Stock</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                    <div class="checkboxgroup">
+                                        <h2 style="color: rgb(255, 41, 119);">Cash on Delivery</h2>
+                                        <div class="checkbox">
+                                            <div class="checkinput" style="height: 100px;">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="checkvalue" style="height: 100px;">
+                                                <p>Eligible for Cash on delivery</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                        <div class="checkboxgroup">
+                                            <h2 style="color: rgb(255, 41, 119);">New Arrival</h2>
+                                            <div class="checkbox">
+                                                <div class="checkinput" style="height: 100px;">
+                                                    <input type="checkbox">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="checkvalue" style="height: 100px;">
+                                                    <p>5% or More</p>
+                                                    <p>5% or More</p>
+                                                </div>
+                                            </div>
+                                            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+   
+    <div class="third-over">
+        <div class="thirdl-cont">
+            <div class="third-cont">
+                <div >
+                    <h2>Smooth, Rich & Loud Audio</h2>
+                    <h1>Branded Headphones</h1>
+                    <h3>Sale up to 25% off all in store</h3>
+                </div>
+                <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/off1.png" alt="">
+            </div>
+        </div>
+        <div class="thirdl-cont">
+            <div class="third-cont">
+                <div >
+                    <h2>A Bigger Phone</h2>
+                    <h1>Smart Phones 5</h1>
+                    <h3>Free shipping order over $100</h3>
+                </div>
+                <img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/off2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer1">
+        <div class="footerin1">
+            <h1>Electronics</h1>
+            <p>If you're considering a new laptop, looking for a powerful new car stereo or shopping for a new HDTV, we make it easy to find exactly what you need at a price you can afford. We offer Every Day Low Prices on TVs, laptops, cell phones, tablets and iPads, video games, desktop computers, cameras and camcorders, audio, video and more.</p>
+            <hr>
+        </div>
+        <div class="footer1in">
+        <div class="footerin2" >
+            <i class="fa-solid fa-dolly"></i>
+            <div>
+                <h1>Free Shipping</h1>
+                <p>on orders over $100</p>
+            </div>
+        </div>
+        <div class="footerin2" >
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h1>Fast Delivery</h1>
+                <p>Worldwide</p>
+            </div>
+        </div>
+        <div class="footerin2" >
+            <i class="fa-regular fa-thumbs-up"></i>
+            <div>
+                <h1>Big Choice</h1>
+                <p>of Products</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    </div>
+<div class="footerdiv">
+    <table class="footer">
+        <tr>
+            <th>Categories</th>
+            <th>Quick Links</th>
+            <th>Get in Touch</th>
+            <th>Newsletter</th>
+        </tr>
+        <tr>
+            <td>Mobiles</td>
+            <td>About us</td>
+            <td>&#9730; 123 Sebastian, USA.</td>
+            <td rowspan="2">Free Delivery on your first order!</td>
+        </tr>
+        <tr>
+            <td>Computers</td>
+            <td>Contact Us</td>
+            <td>&#9990; 333 222 3333</td>
+            
+        </tr>
+        <tr>
+            <td>TV, Audio</td>
+            <td>Help</td>
+            <td>&#9743; +222 11 4444</td>
+            <td rowspan="2" ><input type="search" placeholder="Email" style=" height: 30px;float: left;padding-left: 10px;border-radius: 5px;"><button style="font-size: 20px;color: white;background-color: brown;width: 35px;height: 30px;">Go</button></td>
+        </tr>
+        <tr>
+            <td>Smartphones</td>
+            <td>Faqs</td>
+            <td>&#9993; mail 1@example.com</td>
+        </tr>
+        <tr>
+            <td>Washing Machines</td>
+            <td>Terms of use</td>
+            <td>&#9993; mail 2@example.com</td>
+            <td>Follow Us on</td>
+        </tr>
+        <tr>
+            <td>Refrigerators</td>
+            <td colspan="2">Privacy Policy</td>
+            <td><i style="color: rgb(103, 136, 207);" class="fa-brands fa-facebook"></i><i style="color: rgb(0, 170, 237);" class="fa-brands fa-twitter"></i><i style="color: rgb(222, 77, 58);" class="fa-brands fa-google"></i></td>
+            
+        </tr>
+    </table>
+</div>
+
+<div class="footerdetail">
+    <div>
+    <h2> Mobile & Tablets :</h2>
+    <ul>
+        <li>Android Phones</li>
+        <li>Smartphones</li>
+        <li>Feature Phones</li>
+        <li>Unboxed Phones</li>
+        <li>Refurbished Phones</li>
+        <li>Tablets</li>
+        <li>CDMA Phones</li>
+        <li>Value Added Services</li>
+        <li>Sell Old Used Mobiles</li>
+      </ul>
+      <h2>Computers :</h2>
+      <ul>
+        <li>Laptops</li>
+        <li>Printers</li>
+        <li>Routers</li>
+        <li>Ink &amp; Toner Cartridges</li>
+        <li>Monitors</li>
+        <li>Video Games</li>
+        <li>Unboxed &amp; Refurbished Laptops</li>
+        <li>Assembled Desktops</li>
+        <li>Data Cards</li>
+      </ul>
+      <h2>TV, Audio & Large Appliances</h2>
+    <ul>
+      <li>TVs &amp; DTH</li>
+      <li>Home Theatre Systems</li>
+      <li>Hidden Cameras &amp; CCTVs</li>
+      <li>Refrigerators</li>
+      <li>Washing Machines</li>
+      <li>Air Conditioners</li>
+      <li>Cameras</li>
+      <li>Speakers</li>
+    </ul>
+    <h2>Mobile & Laptop Accessories</h2>
+    <ul>
+      <li>Headphones</li>
+      <li>Power Banks</li>
+      <li>Backpacks</li>
+      <li>Mobile Cases &amp; Covers</li>
+      <li>Pen Drives</li>
+      <li>External Hard Disks</li>
+      <li>Mouse</li>
+      <li>Smart Watches &amp; Fitness Bands</li>
+      <li>MicroSD Cards</li>
+    </ul>
+    <h2>Home & Kitchen Appliances</h2>
+    <ul>
+      <li>Trimmers</li>
+      <li>Hair Dryers</li>
+      <li>Emergency Lights</li>
+      <li>Water Purifiers</li>
+      <li>Electric Kettles</li>
+      <li>Hair Straighteners</li>
+      <li>Induction Cooktops</li>
+      <li>Sewing Machines</li>
+      <li>Geysers</li>
+    </ul>
+    <h2>Offers & Coupons</h2>
+    <ul>
+      <li>Couple Watches</li>
+      <li>Gas Stoves</li>
+      <li>Air Coolers</li>
+      <li>Air Purifiers</li>
+      <li>Headphones</li>
+      <li>Headsets</li>
+      <li>Pressure Cookers</li>
+      <li>Sandwich Makers</li>
+      <li>Air Fryers</li>
+      <li>Irons</li>
+      <li>LED TV</li>
+      <li>Sandwich Makers</li>
+    </ul>
+    <h2>Payment Method</h2>
+    <ul class="noborder">
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay1.png" alt=""></li>
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay2.png" alt=""></li>
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay3.png" alt=""></li>
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay4.png" alt=""></li>
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay5.png" alt=""></li>
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay6.png" alt=""></li>
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay7.png" alt=""></li>
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay8.png" alt=""></li>
+        <li><img src="https://p.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/pay9.png" alt=""></li>
+    </ul>
+</div>
+</div>
+<div class="finalfoot">
+    <p style="font-size: 20px;">© 2018 Electro Store. All rights reserved | Design by W3layouts.</p>
+</div>
+</body>
+</html>
